@@ -1,0 +1,36 @@
+.meet-teams {
+  background: white;
+  .teams-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    h2 {
+      font-size: 3rem;
+    }
+    .team-logo {
+      height: 2.5rem;
+      width: 2.5rem;
+      display: inline-block;
+      margin: 0 0.6rem;
+      img {
+        object-fit: contain !important;
+      }
+    }
+    .table-data {
+      display: flex;
+      align-items: center;
+    }
+    table {
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  }
+}
