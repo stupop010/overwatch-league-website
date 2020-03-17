@@ -1,0 +1,46 @@
+.about {
+  background: white;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  font-family: "Oswald", sans-serif;
+  h2 {
+    font-size: 4rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: rgba($color: #f2883b, $alpha: 0.8);
+  }
+  p {
+    padding: 2rem;
+    font-size: 1.3rem;
+  }
+  .about-card {
+    display: flex;
+  }
+  .card {
+    width: 50%;
+    text-align: start;
+    padding: 0 1rem;
+    h4 {
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.9rem;
+      color: rgba($color: #f2883b, $alpha: 0.5);
+    }
+    .card-content {
+      display: flex;
+      align-items: center;
+      div {
+        flex: 1;
+      }
+      .about-img {
+        flex: 1;
+        height: 13rem;
+      }
+      p {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+      }
+    }
+  }
+}
