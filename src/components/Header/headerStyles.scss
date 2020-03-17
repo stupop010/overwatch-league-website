@@ -1,7 +1,11 @@
 header {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 1.5rem 1rem;
   width: 100%;
-  background: transparent;
+  background: rgba($color: #5e5d5d, $alpha: 0.4);
   border-bottom: 1px solid white;
   display: flex;
   justify-content: space-between;
