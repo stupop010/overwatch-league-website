@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import HomeHero from "../components/homeHero"
 import AboutUs from "../components/aboutUs"
 import MeetTeams from "../components/meetTeams"
+import Standing from "../components/standing"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <HomeHero />
     <AboutUs />
     <MeetTeams />
+    <Standing />
   </Layout>
 )
 

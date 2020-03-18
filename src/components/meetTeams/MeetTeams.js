@@ -6,7 +6,7 @@ import "./meetTeamsStyles.scss"
 
 const MeetTeams = () => {
   const { allFile } = useStaticQuery(graphql`
-    query MyQuery {
+    query {
       allFile(filter: { relativeDirectory: { eq: "teamsLogo" } }) {
         edges {
           node {
@@ -32,9 +32,6 @@ const MeetTeams = () => {
     logos[item.node.base.split(".")[0]] = item.node.childImageSharp
   })
 
-  console.log(logos)
-  //   const paris = data.paris.childImageSharp.fluid
-  //   const toronto = data.toronto.childImageSharp.fluid
   return (
     <section id="teams" className="meet-teams">
       <div className="teams-content">
@@ -48,7 +45,7 @@ const MeetTeams = () => {
         </p>
         <table>
           <thead>
-            <tr>
+            <tr className="table-head">
               <th>ATLANTIC TEAMS</th>
               <th>PACIFIC TEAMS</th>
             </tr>

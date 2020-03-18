@@ -1,5 +1,6 @@
 .meet-teams {
   background: white;
+  padding-bottom: 1rem;
   .teams-content {
     display: flex;
     flex-direction: column;
@@ -23,14 +24,24 @@
       display: flex;
       align-items: center;
     }
+    .table-head {
+      background: black;
+      color: white;
+      th {
+        padding-left: 1rem;
+      }
+    }
+
     table {
       border-collapse: collapse;
+      width: 80%;
     }
 
     table,
     th,
     td {
       border: 1px solid black;
+      padding: 0.5rem;
     }
   }
 }
