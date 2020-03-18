@@ -1,3 +1,4 @@
+// const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Overwatch League`,
@@ -17,7 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/data/`,
+        name: `data`,
+        path: `${__dirname}/src/data/`,
       },
     },
     `gatsby-transformer-sharp`,
