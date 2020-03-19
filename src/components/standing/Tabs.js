@@ -7,17 +7,17 @@ const Tabs = ({ defaultIndex, children }) => {
     const activeStyles = activeIndex === index ? "active-btn" : ""
     return (
       <button
-        className={`tab-btn ${activeStyles}`}
+        className={`btn ${activeStyles}`}
         onClick={() => setActiveIndex(index)}
       >
-        hello
+        {child.props.label}
       </button>
     )
   })
 
   return (
     <>
-      <div>{tabs}</div>
+      <div className="tab-btn">{tabs}</div>
       {children[activeIndex]}
     </>
   )

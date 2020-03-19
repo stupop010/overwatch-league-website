@@ -1,16 +1,57 @@
 .standing {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
   background: #f2f2f2;
 }
 
+.standing-title {
+  padding: 4rem 0rem 3rem 1rem;
+  h2 {
+    margin-bottom: 0.7rem;
+    font-size: 2.3rem;
+  }
+  div {
+    width: 150px;
+    border-bottom: 4px solid #f2883b;
+  }
+}
+
+.tab-container {
+  min-height: 100vh;
+  padding-top: 2.5rem;
+  border-top: 4px solid #f2883b;
+}
+
 .tab-btn {
-  padding: 1rem;
+  margin-left: 2rem;
+  .btn {
+    text-transform: uppercase;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    &:active {
+      outline: none;
+      color: white;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:not(.active-btn):hover {
+      color: #f2883b;
+    }
+  }
+  .active-btn {
+    background: #f2883b;
+    color: white;
+  }
 }
 
-.active-btn {
-  border: 2px solid black;
-}
-
-.regular-season {
+.standing-table {
   width: 98%;
   margin: auto;
 }
@@ -23,8 +64,6 @@
   padding: 0.4rem 1rem;
   font-size: 0.8rem;
   font-weight: bolder;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
   .logo {
     height: 2rem;
     width: 2rem;
@@ -56,6 +95,16 @@
   }
 }
 
+.conference-table {
+  h2 {
+    font-size: 1rem;
+    padding-bottom: 1.1rem;
+    margin: 0;
+  }
+  > div {
+    padding-bottom: 3rem;
+  }
+}
 @media only screen and (max-width: 1320px) {
   .standing-table-row {
     grid-template-columns: 6% auto 6% 8.5% 4% 4% 4% 10% 6%;
