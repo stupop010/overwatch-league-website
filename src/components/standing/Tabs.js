@@ -16,10 +16,10 @@ const Tabs = ({ defaultIndex, children }) => {
   })
 
   return (
-    <div>
+    <>
       <div>{tabs}</div>
       {children[activeIndex]}
-    </div>
+    </>
   )
 }
 

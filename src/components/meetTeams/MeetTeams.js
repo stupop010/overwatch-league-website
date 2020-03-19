@@ -4,34 +4,7 @@ import Img from "gatsby-image"
 
 import "./meetTeamsStyles.scss"
 
-const MeetTeams = () => {
-  const { allFile } = useStaticQuery(graphql`
-    query {
-      allFile(filter: { relativeDirectory: { eq: "teamsLogo" } }) {
-        edges {
-          node {
-            childImageSharp {
-              fluid {
-                src
-                srcSet
-                base64
-                aspectRatio
-                sizes
-              }
-            }
-            base
-          }
-        }
-      }
-    }
-  `)
-
-  let logos = {}
-
-  allFile.edges.map(item => {
-    logos[item.node.base.split(".")[0]] = item.node.childImageSharp
-  })
-
+const MeetTeams = ({ logos }) => {
   return (
     <section id="teams" className="meet-teams">
       <div className="teams-content">

@@ -1,6 +1,7 @@
 [
   {
     "name": "Vancouver Titans",
+    "nick": "VAN",
     "rank": 1,
     "image": "Vancouver_Titans_Logo",
     "conf": "pac",
@@ -13,8 +14,9 @@
   },
   {
     "name": "Washington Justice",
+    "nick": "WAS",
     "rank": 10,
-    "image": "Washington_justice_Logo",
+    "image": "Washington_Justice_Logo",
     "conf": "atl",
     "div": "south",
     "w": 2,
@@ -25,6 +27,7 @@
   },
   {
     "name": "Shanghai Dragons",
+    "nick": "SHO",
     "rank": 14,
     "image": "Shanghai_Dragons_Logo",
     "conf": "pac",
@@ -37,6 +40,7 @@
   },
   {
     "name": "Toronto Defiant",
+    "nick": "TOR",
     "rank": 12,
     "image": "Toronto_Defiant_Logo",
     "conf": "atl",
@@ -49,6 +53,7 @@
   },
   {
     "name": "Seoul Dynasty",
+    "nick": "SEO",
     "rank": 14,
     "image": "Seoul_Dynasty_Logo",
     "conf": "pac",
@@ -61,6 +66,7 @@
   },
   {
     "name": "Philadelphia Fusion",
+    "nick": "PHI",
     "rank": 4,
     "image": "Philadelphia_Fusion_Logo",
     "conf": "atl",
@@ -73,6 +79,7 @@
   },
   {
     "name": "San Francisco Shock",
+    "nick": "SFS",
     "rank": 2,
     "image": "San_Francisco_Shock_Logo",
     "conf": "pac",
@@ -85,6 +92,7 @@
   },
   {
     "name": "Paris Eternal",
+    "nick": "PAR",
     "rank": 5,
     "image": "Paris_Eternal_Logo",
     "conf": "atl",
@@ -97,6 +105,7 @@
   },
   {
     "name": "Los Angeles Valiant",
+    "nick": "VAL",
     "rank": 8,
     "image": "Los_Angeles_Valiant_Logo",
     "conf": "pac",
@@ -109,6 +118,7 @@
   },
   {
     "name": "New York Excelsior",
+    "nick": "NYE",
     "rank": 3,
     "image": "New_York_Excelsior_Logo",
     "conf": "atl",
@@ -121,6 +131,7 @@
   },
   {
     "name": "Los Angeles Gladiators",
+    "nick": "GLA",
     "rank": 19,
     "image": "New_York_Excelsior_Logo",
     "conf": "pac",
@@ -133,6 +144,7 @@
   },
   {
     "name": "London Spitfire",
+    "nick": "LON",
     "rank": 7,
     "image": "London_Spitfire_Logo",
     "conf": "atl",
@@ -145,6 +157,7 @@
   },
   {
     "name": "Hangzhou Spark",
+    "nick": "HZS",
     "rank": 14,
     "image": "Hangzhou_Spark_Logo",
     "conf": "pac",
@@ -157,6 +170,7 @@
   },
   {
     "name": "Houston Outlaws",
+    "nick": "HOU",
     "rank": 11,
     "image": "Houston_Outlaws_Logo",
     "conf": "atl",
@@ -169,6 +183,7 @@
   },
   {
     "name": "Guangzhou Charge",
+    "nick": "GZC",
     "rank": 14,
     "image": "Guangzhou_Charge_Logo",
     "conf": "pac",
@@ -181,6 +196,7 @@
   },
   {
     "name": "Florida Mayhem",
+    "nick": "FLA",
     "rank": 9,
     "image": "Florida_Mayhem_Logo",
     "conf": "atl",
@@ -193,8 +209,9 @@
   },
   {
     "name": "Boston Uprising",
+    "nick": "BOS",
     "rank": 13,
-    "image": "Boston_Uprising_Logo",
+    "image": "Boston_Uprising_Blue_Logo",
     "conf": "atl",
     "div": "north",
     "w": 1,
@@ -205,6 +222,7 @@
   },
   {
     "name": "Dallas Fuel",
+    "nick": "DAL",
     "rank": 20,
     "image": "Dallas_Fuel_Logo",
     "conf": "pac",
@@ -217,6 +235,7 @@
   },
   {
     "name": "Chengdu Hunters",
+    "nick": "CDH",
     "rank": 14,
     "image": "Dallas_Fuel_Logo",
     "conf": "pac",
@@ -229,6 +248,7 @@
   },
   {
     "name": "Atlanta Reign",
+    "nick": "ATL",
     "rank": 6,
     "image": "Atlanta_Reign_Logo",
     "conf": "atl",

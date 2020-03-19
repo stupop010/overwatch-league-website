@@ -9,3 +9,74 @@
 .active-btn {
   border: 2px solid black;
 }
+
+.regular-season {
+  width: 98%;
+  margin: auto;
+}
+
+.standing-table-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4% auto 4% 6% 4% 4% 4% 6% 5%;
+  border-radius: 1px;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  .logo {
+    height: 2rem;
+    width: 2rem;
+  }
+  .team-logo {
+    display: flex;
+    align-items: center;
+    span {
+      margin-right: 10px;
+    }
+    img {
+      object-fit: contain !important;
+    }
+  }
+}
+
+.table-row {
+  border-top: 1px solid rgba($color: #c0bcbc, $alpha: 0.4);
+  background: white;
+  div {
+    display: flex;
+    align-items: center;
+  }
+  .pos {
+    color: green;
+  }
+  .neg {
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .standing-table-row {
+    grid-template-columns: 6% auto 6% 8.5% 4% 4% 4% 10% 6%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .standing-table-row {
+    grid-template-columns: 8% auto 8% 11% 5% 5% 5% 13% 7%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .standing-table-row {
+    grid-template-columns: 9% auto 8% 14% 5% 5% 5% 15% 9%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .standing-table-row {
+    grid-template-columns: 9% auto 8% 14% 7% 7% 7% 14% 8%;
+    font-size: 0.65rem;
+  }
+}
