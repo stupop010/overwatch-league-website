@@ -1,0 +1,30 @@
+.contact-container {
+  height: 100vh;
+  .contact {
+    height: 100%;
+    width: 100%;
+  }
+  .contact:before {
+    background-attachment: fixed !important;
+  }
+  form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color: #000000, $alpha: 0.6);
+    color: white;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  .title-underline {
+    height: 10px;
+    width: 150px;
+    background: #f2883b;
+  }
+  .input-container {
+    display: flex;
+  }
+}
