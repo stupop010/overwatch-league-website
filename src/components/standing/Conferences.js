@@ -10,9 +10,9 @@ const Conferences = ({ teams, logos }) => {
 
   teams.map(team => {
     if (team.conf === "atl") {
-      alt.push(team)
+      return alt.push(team)
     } else {
-      pac.push(team)
+      return pac.push(team)
     }
   })
 

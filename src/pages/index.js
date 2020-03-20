@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -8,8 +8,11 @@ import AboutUs from "../components/aboutUs"
 import MeetTeams from "../components/meetTeams"
 import Standing from "../components/standing"
 import ContactUs from "../components/contactUs"
+import Menu from "../components/menu"
 
 const IndexPage = () => {
+  const [open, setOpen] = useState(false)
+
   const { allFile } = useStaticQuery(graphql`
     query {
       allFile(filter: { relativeDirectory: { eq: "teamsLogo" } }) {
@@ -34,12 +37,13 @@ const IndexPage = () => {
   let logos = {}
 
   allFile.edges.map(item => {
-    logos[item.node.base.split(".")[0]] = item.node.childImageSharp
+    return (logos[item.node.base.split(".")[0]] = item.node.childImageSharp)
   })
 
   return (
-    <Layout>
+    <Layout open={open} setOpen={setOpen}>
       <SEO title="Home" />
+      <Menu open={open} setOpen={setOpen} />
       <HomeHero />
       <AboutUs />
       <MeetTeams logos={logos} />

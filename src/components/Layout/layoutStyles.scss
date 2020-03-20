@@ -631,6 +631,29 @@ pre tt:after {
   background: black;
   color: white;
 }
+
+.home-link {
+  z-index: 1;
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  div {
+    pointer-events: all;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+    border: 2px solid #f2883b;
+    color: #f2883b;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
