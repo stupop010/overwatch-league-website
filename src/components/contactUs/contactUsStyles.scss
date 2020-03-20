@@ -1,5 +1,6 @@
 .contact-container {
   height: 100vh;
+  margin-top: 0.5rem;
   .contact {
     height: 100%;
     width: 100%;
@@ -9,22 +10,77 @@
   }
   form {
     height: 100%;
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background: rgba($color: #000000, $alpha: 0.6);
     color: white;
   }
+
   h2 {
     font-size: 2.7rem;
   }
+
   .title-underline {
     height: 10px;
     width: 150px;
     background: #f2883b;
   }
+
   .input-container {
     display: flex;
+    width: 100%;
+  }
+
+  .input-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0;
+    .form-input {
+      width: 80%;
+      font-size: 1.4rem;
+      padding: 0.5rem;
+      margin: 1rem auto 0 auto;
+      border: 1px white solid;
+      color: white;
+      background: rgba($color: #474747, $alpha: 0.8);
+      border-radius: 2px;
+    }
+    > textarea {
+      height: 100%;
+      resize: none;
+    }
+  }
+
+  .form-btn {
+    margin-top: 3rem;
+    padding: 0.4rem 2rem;
+    font-size: 1.5rem;
+    border: 1px white solid;
+    color: white;
+    background: rgba($color: #474747, $alpha: 0.8);
+    border-radius: 2px;
+    &:hover {
+      cursor: pointer;
+      border-color: #f2883b;
+      color: #f2883b;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .contact-container .input-container {
+    display: block;
+    padding-top: 2rem;
+    .input-left {
+      width: 100%;
+      margin-top: 0;
+      > textarea {
+        height: 6rem;
+      }
+    }
   }
 }
