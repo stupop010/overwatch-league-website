@@ -2,7 +2,6 @@
   z-index: 3;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background: lavender;
   height: 100vh;
   text-align: left;
@@ -11,4 +10,17 @@
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
+  ul {
+    li {
+      list-style: none;
+      text-transform: uppercase;
+      width: 10rem;
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      &:hover {
+        cursor: pointer;
+        color: #f2883b;
+      }
+    }
+  }
 }
