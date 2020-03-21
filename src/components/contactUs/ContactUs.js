@@ -1,7 +1,7 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 import useForm from "../../hooks/useForm"
+
+import ContactPic from "../../images/contact-pic.jpeg"
 
 import "./contactUsStyles.scss"
 
@@ -13,27 +13,12 @@ const ContactUs = () => {
     message: "",
   })
 
-  const { contactPic } = useStaticQuery(graphql`
-    query {
-      contactPic: file(relativePath: { eq: "contact-pic.jpeg" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
-  const pic = contactPic.childImageSharp.fluid
-
   return (
     <section className="contact-container" id="contact">
-      <BackgroundImage
+      <div
         Tag="section"
         className="contact"
-        fluid={pic}
-        backgroundColor={`#040e18`}
+        style={{ backgroundImage: `url('${ContactPic}')` }}
       >
         <form onSubmit={handleSubmit}>
           <h2>Contact</h2>
@@ -80,7 +65,7 @@ const ContactUs = () => {
             Submit
           </button>
         </form>
-      </BackgroundImage>
+      </div>
     </section>
   )
 }

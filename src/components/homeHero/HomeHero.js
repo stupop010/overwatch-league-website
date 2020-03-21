@@ -1,47 +1,21 @@
 import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons"
-import BackgroundImage from "gatsby-background-image"
+
+import HeroOne from "../../images/heroOne.jpg"
+import HeroTwo from "../../images/heroTwo.jpeg"
+import HeroThree from "../../images/heroThree.jpg"
+
 import "./homeHeroStyles.scss"
 
 const HomeHero = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      heroOne: file(relativePath: { eq: "heroOne.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      heroTwo: file(relativePath: { eq: "heroTwo.jpeg" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      heroThree: file(relativePath: { eq: "heroThree.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [carouselInterval, setCarouselInterval] = useState("")
 
-  const heroOne = data.heroOne.childImageSharp.fluid
-  const heroTwo = data.heroTwo.childImageSharp.fluid
-  const heroThree = data.heroThree.childImageSharp.fluid
-  const heroPicSet = [heroOne, heroTwo, heroThree]
+  const heroPicSet = [HeroOne, HeroTwo, HeroThree]
 
   useEffect(() => {
     const id = setTimeout(() => nextSlide(), 4000)
@@ -69,11 +43,10 @@ const HomeHero = () => {
 
   return (
     <section className="hero" id="home">
-      <BackgroundImage
+      <div
         Tag="section"
         className="hero-pic"
-        fluid={heroPicSet[currentImageIndex]}
-        backgroundColor={`#040e18`}
+        style={{ backgroundImage: `url('${heroPicSet[currentImageIndex]}')` }}
       >
         <button className="hero-nav-btn left" onClick={previousSlide}>
           <FontAwesomeIcon icon={faChevronLeft} />
@@ -81,7 +54,7 @@ const HomeHero = () => {
         <button className="hero-nav-btn right" onClick={nextSlide}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
-      </BackgroundImage>
+      </div>
     </section>
   )
 }
