@@ -1,13 +1,16 @@
 .contact-container {
-  height: 100vh;
+  height: 650px;
   margin-top: 0.5rem;
+
   .contact {
     height: 100%;
     width: 100%;
   }
+
   .contact:before {
     background-attachment: fixed !important;
   }
+
   form {
     height: 100%;
     padding-top: 4rem;
